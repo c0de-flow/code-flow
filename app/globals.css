@@ -25,6 +25,16 @@
   font-style: normal;
 }
 
+/* HEADER-SECTION STYLES */
+
 .custom-container {
   @apply px-6 pt-8;
+}
+
+.header-button {
+  @apply border border-borderColor rounded-[36px] py-4 px-10
+}
+
+.header-span {
+  @apply text-xl text-start text-lightGray
 }
