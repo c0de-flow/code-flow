@@ -17,9 +17,11 @@ const config: Config = {
         algerian: ["Algerian", "sans-serif"],
         abhaya: ["Abhaya Libre", "sans-serif"],
         inter: ["Inter", "sans-serif"],
+        cherry: ["Cherry bomb", "sans-serif"],
       },
       backgroundImage: {
         "header-bg": "url('/Header-img.jpeg')",
+        "responsive-header-bg": "url('/responsive-header-bg.jpeg')"
       },
       boxShadow: {
         "header-box": "0px 0px 60px 30px rgba(39, 66, 123, 1) inset",

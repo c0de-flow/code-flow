@@ -20,7 +20,7 @@ const Navbar = () => {
 
   return (
     <header className="w-full overflow-x-hidden z-50">
-      <nav className="relative w-full px-4 py-8 flex items-center justify-between">
+      <nav className="relative w-full px-6 py-8 flex items-center justify-between">
         {/* Logo section */}
         <div className="flex items-center pl-4">
           <Image src="/logo.png" alt="logo" width={45} height={35} className="mr-2" />

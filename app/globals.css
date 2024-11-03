@@ -25,6 +25,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Cherry bomb";
+  src: url("/fonts/cherrybombone-regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* NAVBAR STYLES */
 
 .nav-link {
@@ -62,11 +69,6 @@
 .custom-container {
   @apply px-6 pt-8;
 }
-
-.header-button {
-  @apply border border-borderColor rounded-[36px] py-4 px-10;
-}
-
 .header-span {
-  @apply text-xl text-start text-lightGray;
+  @apply text-start text-lightGray;
 }
