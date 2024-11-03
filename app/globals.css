@@ -25,6 +25,38 @@
   font-style: normal;
 }
 
+/* NAVBAR STYLES */
+
+.nav-link {
+  @apply text-lightGray relative py-2;
+}
+
+.active {
+  color: white;
+  font-weight: bold;
+}
+
+.nav-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 1px;
+  background-color: #F4A0FF; 
+  position: absolute;
+  left: 0;
+  bottom: -4px; 
+  transition: width 0.3s ease;
+}
+
+.active::after {
+  width: 100%;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+
 /* HEADER-SECTION STYLES */
 
 .custom-container {
@@ -32,9 +64,9 @@
 }
 
 .header-button {
-  @apply border border-borderColor rounded-[36px] py-4 px-10
+  @apply border border-borderColor rounded-[36px] py-4 px-10;
 }
 
 .header-span {
-  @apply text-xl text-start text-lightGray
+  @apply text-xl text-start text-lightGray;
 }
