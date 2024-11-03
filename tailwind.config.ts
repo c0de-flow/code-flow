@@ -9,8 +9,13 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        bodyBackground: "#120C31",
+        borderColor: "#5999BB",
+      },
+      fontFamily: {
+        algerian: ["Algerian", "sans-serif"],
+        abhaya: ['Abhaya Libre', 'sans-serif'],
+        inter: ['Inter', 'sans-serif'],
       },
     },
   },
