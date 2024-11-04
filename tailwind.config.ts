@@ -12,6 +12,10 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        abhaya: ['"Abhaya Libre"', 'sans-serif'],
+        aladin: ['Aladin', 'sans-serif'],
+      },
     },
   },
   plugins: [],
