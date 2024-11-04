@@ -25,15 +25,21 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Cherry bomb";
+  src: url("/fonts/cherrybombone-regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* NAVBAR STYLES */
 
 .nav-link {
-  @apply text-lightGray relative py-2;
+  @apply text-lightGray relative py-2 transition-all duration-300;
 }
 
 .active {
-  color: white;
-  font-weight: bold;
+  @apply text-white font-bold;
 }
 
 .nav-link::after {
@@ -45,11 +51,15 @@
   position: absolute;
   left: 0;
   bottom: -4px; 
-  transition: width 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .active::after {
   width: 100%;
+}
+
+.nav-link:hover {
+  color: white;
 }
 
 .nav-link:hover::after {
@@ -62,11 +72,6 @@
 .custom-container {
   @apply px-6 pt-8;
 }
-
-.header-button {
-  @apply border border-borderColor rounded-[36px] py-4 px-10;
-}
-
 .header-span {
-  @apply text-xl text-start text-lightGray;
+  @apply text-start text-lightGray;
 }
