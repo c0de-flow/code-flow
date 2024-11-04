@@ -1,8 +1,20 @@
 import Image from "next/image";
 import React from "react";
 import Navbar from "./Navbar";
+import CustomButton from "../buttonComponent/customButton";
+import InformationText from "./InformationText";
 
 const Header = () => {
+  // Define Buttons Data
+  const buttons = [{ label: "Services" }, { label: "Contact" }];
+
+  // Define Information Data
+  const infoData = [
+    { number: "24", label: "Years \n Experience" },
+    { number: "1M", label: "User's \n Satisfaction" },
+    { number: "10k", label: "Official \n Subscribers" },
+  ];
+
   return (
     <main className="min-h-screen flex justify-center text-white text-center custom-container">
       <div className="flex flex-col justify-between md:justify-between md:items-center gap-10 relative w-full rounded-[74px] shadow-header-box min-h-full">
@@ -13,7 +25,7 @@ const Header = () => {
           <Navbar />
         </div>
 
-        <div className="flex flex-col items-center justify-end h-full gap-20 w-full px-4 mt-auto">
+        <div className="flex flex-col items-center justify-around mt-80 md:mt-0 md:justify-end h-full gap-20 w-full px-4">
           {/* Main Text Content */}
           <div className="flex flex-col items-center justify-center gap-10">
             <h1 className="text-[32px] md:text-[96px] uppercase font-cherry md:font-algerian w-full text-center">
@@ -27,40 +39,21 @@ const Header = () => {
 
           {/* Header Buttons */}
           <div className="flex flex-col md:flex-row justify-center items-center gap-10 md:gap-20 text-2xl md:text-4xl font-semibold w-full font-abhaya">
-            <button className="border border-borderColor rounded-[36px] py-4 px-32 md:px-10">
-              Services
-            </button>
-            <button className="border border-borderColor rounded-[36px] py-4 px-32 md:px-10">
-              Contact
-            </button>
+            {buttons.map((button, index) => (
+              <CustomButton key={index} label={button.label} />
+            ))}
           </div>
-          
+
           {/* Information Elements */}
 
-          <div className="flex justify-center items-end gap-10 w-full font-inter mb-10 px-4 ">
-            <div className="flex items-center gap-3">
-              <p className="md:text-[58px]">24</p>
-              <span className="header-span text-[12px] md:text-[22px]">
-                Years <br />
-                Experience
-              </span>
-            </div>
-
-            <div className="flex items-center gap-1 md:gap-3">
-              <p className="md:text-[58px]">1M</p>
-              <span className="header-span text-[12px] md:text-[22px]">
-                User's <br />
-                Satisfaction
-              </span>
-            </div>
-
-            <div className="flex items-center gap-3">
-              <p className="md:text-[58px]">10k</p>
-              <span className="header-span text-[12px] md:text-[22px]">
-                Official <br />
-                Subscribers
-              </span>
-            </div>
+          <div className="flex justify-center gap-5 md:gap-10 w-full font-inter mb-10 px-4">
+            {infoData.map((info, index) => (
+              <InformationText
+                key={index}
+                number={info.number}
+                label={info.label}
+              />
+            ))}
           </div>
         </div>
 
