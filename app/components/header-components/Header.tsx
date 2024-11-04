@@ -1,31 +1,25 @@
 import Image from "next/image";
 import React from "react";
 import Navbar from "./Navbar";
-import CustomButton from "../buttonComponent/customButton";
-import InformationText from "./InformationText";
+
+import CustomButton from "../buttonComponent/CustomButton";
 
 const Header = () => {
   // Define Buttons Data
   const buttons = [{ label: "Services" }, { label: "Contact" }];
 
-  // Define Information Data
-  const infoData = [
-    { number: "24", label: "Years \n Experience" },
-    { number: "1M", label: "User's \n Satisfaction" },
-    { number: "10k", label: "Official \n Subscribers" },
-  ];
 
   return (
     <main className="min-h-screen flex justify-center text-white text-center custom-container">
       <div className="flex flex-col justify-between md:justify-between md:items-center gap-10 relative w-full rounded-[74px] shadow-header-box min-h-full">
-        <div className="absolute inset-0 bg-responsive-header-bg md:bg-header-bg bg-cover bg-center opacity-20 rounded-[74px]"></div>
+        <div className="absolute inset-0 bg-responsive-header-bg md:bg-header-bg bg-cover bg-center opacity-20 rounded-[74px] -z-10"></div>
 
         {/* Navbar at the top */}
-        <div className="absolute inset-0">
+        <div className="absolute top-0 left-0 w-full z-50">
           <Navbar />
         </div>
 
-        <div className="flex flex-col items-center justify-around mt-80 md:mt-0 md:justify-end h-full gap-20 w-full px-4">
+        <div className="flex flex-col items-center justify-center h-full gap-20 w-full px-4">
           {/* Main Text Content */}
           <div className="flex flex-col items-center justify-center gap-10">
             <h1 className="text-[32px] md:text-[96px] uppercase font-cherry md:font-algerian w-full text-center">
@@ -44,9 +38,9 @@ const Header = () => {
             ))}
           </div>
 
-          {/* Information Elements */}
+          {/* Information Info Component */}
 
-          <div className="flex justify-center gap-5 md:gap-10 w-full font-inter mb-10 px-4">
+          {/* <div className="flex justify-center gap-5 md:gap-10 w-full font-inter mb-10 px-4">
             {infoData.map((info, index) => (
               <InformationText
                 key={index}
@@ -54,7 +48,8 @@ const Header = () => {
                 label={info.label}
               />
             ))}
-          </div>
+          </div> */}
+
         </div>
 
         {/* Down Arrow Element, hidden on smaller screens */}

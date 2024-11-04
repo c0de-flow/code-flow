@@ -10,7 +10,9 @@ function CustomButton({ label, onClick, className }: CustomButtonProps) {
   return (
     <button
       onClick={onClick}
-      className={`border border-borderColor rounded-[36px] py-4 px-32 md:px-10 ${className}`}
+      className={`border border-borderColor rounded-[36px] py-4 px-10 transition-all duration-300 ease-in-out 
+                  hover:bg-borderColor hover:border-black hover:text-white hover:shadow-lg hover:scale-105 
+                  ${className}`}
     >
       {label}
     </button>
