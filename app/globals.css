@@ -39,8 +39,7 @@
 }
 
 .active {
-  color: white;
-  font-weight: bold;
+  @apply text-white font-bold;
 }
 
 .nav-link::after {

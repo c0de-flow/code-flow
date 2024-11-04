@@ -1,13 +1,15 @@
 import Image from "next/image";
 import React from "react";
 import Navbar from "./Navbar";
-
 import CustomButton from "../buttonComponent/CustomButton";
+import TypedComponent from "./TypedComponent";
 
 const Header = () => {
   // Define Buttons Data
   const buttons = [{ label: "Services" }, { label: "Contact" }];
 
+  // Text for Typed Component
+  const typedTexts = ["Welcome to Code Flow", "Your partner in digital innovation"];
 
   return (
     <main className="min-h-screen flex justify-center text-white text-center custom-container">
@@ -22,9 +24,11 @@ const Header = () => {
         <div className="flex flex-col items-center justify-center h-full gap-20 w-full px-4">
           {/* Main Text Content */}
           <div className="flex flex-col items-center justify-center gap-10">
-            <h1 className="text-[32px] md:text-[96px] uppercase font-cherry md:font-algerian w-full text-center">
-              welcome to code flow
-            </h1>
+            {/* Using TypedComponent here with styles */}
+            <TypedComponent
+              text={typedTexts} 
+              className="text-[32px] md:text-[72px] uppercase font-cherry md:font-algerian w-full text-center"
+            />
             <p className="text-2xl md:text-4xl leading-10 font-abhaya w-full text-center">
               With us, your ideas turn into innovative applications and your
               business <br /> takes leaps into the future
@@ -38,23 +42,10 @@ const Header = () => {
             ))}
           </div>
 
-          {/* Information Info Component */}
-
-          {/* <div className="flex justify-center gap-5 md:gap-10 w-full font-inter mb-10 px-4">
-            {infoData.map((info, index) => (
-              <InformationText
-                key={index}
-                number={info.number}
-                label={info.label}
-              />
-            ))}
-          </div> */}
-
-        </div>
-
-        {/* Down Arrow Element, hidden on smaller screens */}
-        <div className="hidden lg:flex absolute left-20 bottom-[26px] border border-white rounded-full p-10 justify-center items-center">
-          <Image src={"/arrow.png"} alt="down-arrow" width={25} height={25} />
+          {/* Down Arrow Element, hidden on smaller screens */}
+          <div className="hidden lg:flex absolute left-20 bottom-[26px] border border-white rounded-full p-10 justify-center items-center">
+            <Image src={"/arrow.png"} alt="down-arrow" width={25} height={25} />
+          </div>
         </div>
       </div>
     </main>
