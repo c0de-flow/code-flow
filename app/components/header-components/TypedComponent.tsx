@@ -1,7 +1,8 @@
 "use client";
 
 import React, { useEffect, useRef } from "react";
-import Typed from "typed.js";
+import Typed, { TypedOptions } from "typed.js";
+;
 
 
 interface TypedComponentProps {
@@ -15,7 +16,7 @@ function TypedComponent({ text, className }: TypedComponentProps) {
 // Options of text typing effect
 
   useEffect(() => {
-    const options: Typed.Options = {
+    const options: TypedOptions = {
       strings: text,
       typeSpeed: 50,
       backSpeed: 50,
