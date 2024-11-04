@@ -26,6 +26,10 @@ const config: Config = {
       boxShadow: {
         "header-box": "0px 0px 60px 30px rgba(39, 66, 123, 1) inset",
       },
+      fontFamily: {
+        abhaya: ['"Abhaya Libre"', 'sans-serif'],
+        aladin: ['Aladin', 'sans-serif'],
+      },
     },
   },
   plugins: [],
