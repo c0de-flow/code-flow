@@ -2,29 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: 'Abhaya Libre';
-  src: url('/fonts/AbhayaLibre-ExtraBold.ttf') format('truetype');
-  font-weight: 800; /* ExtraBold */
-  font-style: normal;
-}
+/* DECLARE FONTS FOR TAILWIND CLASSES USE */
 
 @font-face {
-  font-family: 'Abhaya Libre';
-  src: url('/fonts/AbhayaLibre-Regular.ttf') format('truetype');
-  font-weight: 400; /* Regular */
+  font-family: "Algerian";
+  src: url("/fonts/Algerian Regular.ttf") format("truetype");
+  font-weight: normal;
   font-style: normal;
-}
-@font-face {
-  font-family: 'Aladin';
-  src: url('/fonts/Aladin-Regular.ttf') format('truetype');
-  font-weight: normal; 
-  font-style: normal;
-}
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
 }
 
 @font-face {
@@ -59,14 +43,14 @@
 }
 
 .nav-link::after {
-  content: '';
+  content: "";
   display: block;
   width: 0;
   height: 1px;
-  background-color: #F4A0FF; 
+  background-color: #f4a0ff;
   position: absolute;
   left: 0;
-  bottom: -4px; 
+  bottom: -4px;
   transition: all 0.3s ease;
 }
 
@@ -81,7 +65,6 @@
 .nav-link:hover::after {
   width: 100%;
 }
-
 
 /* HEADER-SECTION STYLES */
 
