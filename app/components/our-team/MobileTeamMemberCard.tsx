@@ -19,7 +19,7 @@ const MobileTeamMemberCard = ({
         alt={name}
         width={190}
         height={235}
-        className="rounded-xl"
+        className="rounded-xl py-2"
       />
       <div className="absolute bottom-0 flex flex-col justify-center items-center rounded-lg bg-mobile-team-bg w-full">
         <p className="text-xl font-abhaya">{name}</p>
