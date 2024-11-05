@@ -32,6 +32,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Aladin";
+  src: url("/fonts/Aladin-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* NAVBAR STYLES */
 
 .nav-link {
@@ -74,3 +81,11 @@
 .header-span {
   @apply text-start text-lightGray;
 }
+
+/* OUR-TEAM STYLES */
+
+.section-title {
+  @apply text-5xl text-section-title font-aladin;
+  text-shadow: 0px 0px 60px rgba(33, 103, 252, 0.72);
+}
+

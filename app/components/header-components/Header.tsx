@@ -27,7 +27,7 @@ const Header = () => {
             {/* Using TypedComponent here with styles */}
             <TypedComponent
               text={typedTexts} 
-              className="text-[32px] md:text-[72px] uppercase font-cherry md:font-algerian w-full text-center"
+              className="text-[28px] mt-40 sm:mt-0 md:text-[72px] uppercase font-cherry md:font-algerian w-full text-center"
             />
             <p className="text-2xl md:text-4xl leading-10 font-abhaya w-full text-center">
               With us, your ideas turn into innovative applications and your

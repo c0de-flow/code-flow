@@ -29,13 +29,13 @@ export default function About() {
 
       </div>
          {/* Right section: contains the "About Us" title and a navigation button */}      
-      <div className=" relative w-full md:w-[40%] flex flex-col items-center   lg:mt-20">
+      <div className=" relative w-full md:w-[40%] flex flex-col items-center lg:mt-20">
          {/* "About Us" header with a blurred background effect */}
         <div className="relative">
             {/* Decorative blurred background behind the "About Us" title */}
           <div className="absolute inset-4 lg:inset-12 bg-[#2167FC] opacity-[100%] blur-3xl rounded-[83px] "></div>
            {/* "About Us" title */}
-          <h3 className="font-aladin text-[50px] lg:text-[64px]  lg:pr-28 text-white text-opacity-75 mb-8 relative z-10">About Us</h3>
+          <h3 className="font-aladin text-[50px] lg:text-[64px] lg:pr-28 text-white text-opacity-75 mb-8 relative z-10">About Us</h3>
         </div>
         {/* Downward arrow button for navigation, visible only on large screens */}
         <div className="absolute bottom-[50px] -right-4 hidden lg:block ">
