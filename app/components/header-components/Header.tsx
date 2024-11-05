@@ -3,13 +3,17 @@ import React from "react";
 import Navbar from "./Navbar";
 import CustomButton from "../buttonComponent/CustomButton";
 import TypedComponent from "./TypedComponent";
+import DownArrow from "../down-arrow/DownArrow";
 
 const Header = () => {
   // Define Buttons Data
   const buttons = [{ label: "Services" }, { label: "Contact" }];
 
   // Text for Typed Component
-  const typedTexts = ["Welcome to Code Flow", "Your partner in digital innovation"];
+  const typedTexts = [
+    "Welcome to Code Flow",
+    "Your partner in digital innovation",
+  ];
 
   return (
     <main className="min-h-screen flex justify-center text-white text-center custom-container">
@@ -26,7 +30,7 @@ const Header = () => {
           <div className="flex flex-col items-center justify-center gap-10">
             {/* Using TypedComponent here with styles */}
             <TypedComponent
-              text={typedTexts} 
+              text={typedTexts}
               className="text-[28px] mt-40 sm:mt-0 md:text-[72px] uppercase font-cherry md:font-algerian w-full text-center"
             />
             <p className="text-2xl md:text-4xl leading-10 font-abhaya w-full text-center">
@@ -43,9 +47,7 @@ const Header = () => {
           </div>
 
           {/* Down Arrow Element, hidden on smaller screens */}
-          <div className="hidden lg:flex absolute left-20 bottom-[26px] border border-white rounded-full p-10 justify-center items-center">
-            <Image src={"/arrow.png"} alt="down-arrow" width={25} height={25} />
-          </div>
+          <DownArrow otherClasses="left-20" />
         </div>
       </div>
     </main>
