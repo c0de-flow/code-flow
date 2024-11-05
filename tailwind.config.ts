@@ -12,6 +12,7 @@ const config: Config = {
         bodyBackground: "#120C31",
         borderColor: "#5999BB",
         lightGray: "#FFFFFFBF",
+        swiperBullet: "#27427B",
         "section-title": "rgba(255, 255, 255, 0.75)",
         "mobile-team-border": "rgba(255, 255, 255, 0.1)",
         "mobile-team-bg": "rgba(18, 12, 49, 0.63)",

@@ -14,6 +14,7 @@ const MobileTeamMemberCard = ({
 }: MobileTeamMemberCardProps) => {
   return (
     <div className="flex justify-center items-center rounded-lg shadow-lg mb-4 border border-mobile-team-border relative">
+      {/* Image styles for mobile screens */}
       <Image
         src={imgSrc}
         alt={name}
@@ -21,6 +22,7 @@ const MobileTeamMemberCard = ({
         height={235}
         className="rounded-xl py-2"
       />
+      {/* Overlay text for the mobile screen images */}
       <div className="absolute bottom-0 flex flex-col justify-center items-center rounded-lg bg-mobile-team-bg w-full">
         <p className="text-xl font-abhaya">{name}</p>
         <p className="font-abhaya mb-2">{role}</p>
