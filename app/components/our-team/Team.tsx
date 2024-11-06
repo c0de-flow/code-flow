@@ -16,7 +16,7 @@ const Team = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <section className="flex flex-col justify-center items-center py-40 relative">
+    <section id="our-team" className="flex flex-col justify-center items-center py-40 relative">
       <div className="relative mb-20 md:mb-60">
         <SectionTitle title="Our Team" />
         <EllipseBackground
