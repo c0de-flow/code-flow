@@ -22,10 +22,10 @@ const config: Config = {
       },
       fontFamily: {
         algerian: ["Algerian", "sans-serif"],
-        abhaya: ["Abhaya Libre", "sans-serif"],
+        abhaya: ['"Abhaya Libre"', 'sans-serif'],
+        aladin: ['Aladin', 'sans-serif'],
         inter: ["Inter", "sans-serif"],
         cherry: ["Cherry bomb", "sans-serif"],
-        aladin: ["Aladin", "sans-serif"],
         abril: ["Abril", "sans-serif"],
       },
       backgroundImage: {
@@ -36,6 +36,14 @@ const config: Config = {
         "header-box": "0px 0px 60px 30px rgba(39, 66, 123, 1) inset",
         businessShadow: "0px 4px 0px #120C31",
       },
+      screens: {
+        sm: '640px',
+        md: '768px',
+        lg: '1440px', 
+        xl: '1280px',
+        '2xl': '1536px',
+      },
+
     },
   },
   plugins: [],
