@@ -1,5 +1,4 @@
 import React from "react";
-import { IoIosArrowRoundDown } from "react-icons/io";
 import DownArrow from "../down-arrow/DownArrow";
 
 export default function About() {
