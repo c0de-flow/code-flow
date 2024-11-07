@@ -12,8 +12,9 @@ const config: Config = {
         bodyBackground: "#120C31",
         borderColor: "#5999BB",
         lightBlue: "#7ED2FF",
-        darkBlue : "#1A1240",
+        darkBlue: "#1A1240",
         lightGray: "#FFFFFFBF",
+        lightPink: "#F4A0FF",
         swiperBullet: "#27427B",
         businessOverlay: "rgba(54,37,151,0.8)",
         "section-title": "rgba(255, 255, 255, 0.75)",
@@ -31,6 +32,7 @@ const config: Config = {
       backgroundImage: {
         "header-bg": "url('/Header-img.jpeg')",
         "responsive-header-bg": "url('/responsive-header-bg.jpeg')",
+        "footer-bg": "url('/footer-bg.png')",
       },
       boxShadow: {
         "header-box": "0px 0px 60px 30px rgba(39, 66, 123, 1) inset",

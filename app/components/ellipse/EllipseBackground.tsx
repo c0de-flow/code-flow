@@ -5,9 +5,12 @@ interface EllipseBackgroundProps {
   height?: string;
   top?: string;
   left?: string;
+  right?: string;
+  bottom?: string;
   backgroundColor?: string;
   opacity?: number;
   blur?: string;
+  otherClasses?: string;
 }
 
 const EllipseBackground = function ({
@@ -17,12 +20,15 @@ const EllipseBackground = function ({
   backgroundColor = "rgba(33, 103, 252, 0.09)",
   opacity = 1,
   blur = "125px",
-  top = "0",
-  left = "0",
+  top,
+  left,
+  right,
+  bottom,
+  otherClasses,
 }: EllipseBackgroundProps) {
   return (
     <div
-      className="absolute pointer-events-none"
+      className={`absolute pointer-events-none ${otherClasses}`}
       style={{
         width,
         height,
@@ -31,6 +37,8 @@ const EllipseBackground = function ({
         filter: `blur(${blur})`,
         top,
         left,
+        right,
+        bottom,
       }}
     />
   );
