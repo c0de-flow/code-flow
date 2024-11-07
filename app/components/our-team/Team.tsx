@@ -16,8 +16,11 @@ const Team = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <section id="our-team" className="flex flex-col justify-center items-center py-40 relative">
-      <div className="relative mb-20 md:mb-60">
+    <section
+      id="our-team"
+      className="flex flex-col justify-center items-center py-20 relative"
+    >
+      <div className="relative md:mb-20">
         <SectionTitle title="Our Team" />
         <EllipseBackground
           width="395px"
@@ -31,7 +34,7 @@ const Team = () => {
       </div>
 
       {/* Desktop team member cards */}
-      <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-3 gap-40 text-white">
+      <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-3 gap-40 text-white mt-40">
         {teamMembers.map((member, index) => (
           <TeamMemberCard
             key={index}

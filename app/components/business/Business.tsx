@@ -3,14 +3,15 @@ import SectionTitle from "../sectionTitle/SectionTitle";
 import EllipseBackground from "../ellipse/EllipseBackground";
 import businessCard from "@/app/constants/BusinessCards";
 import BusinessCardMobile from "./BusinessCardMobile";
+import BusinessCardDesktop from "./BusinessCardDesktop";
 
 const Business = () => {
   return (
     <section
       id="our-business"
-      className="flex flex-col justify-center items-center py-40 relative"
+      className="flex flex-col justify-center items-center py-20 relative"
     >
-      <div className="relative mb-20 md:mb-60">
+      <div className="relative md:mb-20">
         <SectionTitle title="Our Business" />
         <EllipseBackground
           width="395px"
@@ -21,6 +22,13 @@ const Business = () => {
           top="-300px"
           left="-150px"
         />
+      </div>
+
+      {/* Map through businessCard array for desktop screens */}
+      <div className="hidden md:flex flex-col items-center justify-center gap-10 text-white w-full overflow-hidden">
+        {businessCard.map((card, index) => (
+          <BusinessCardDesktop key={index} card={card} index={index} />
+        ))}
       </div>
 
       {/* Map through businessCard array for mobile and small screens */}

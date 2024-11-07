@@ -2,7 +2,7 @@ import Image from "next/image";
 
 interface BusinessCardProps {
   card: {
-    bgImg: string;
+    imgSrc: string;
     speciality: string;
     title: string;
     description: string;
@@ -11,11 +11,11 @@ interface BusinessCardProps {
 
 const BusinessCardMobile = ({ card }: BusinessCardProps) => {
   return (
-    <div className="w-full max-w-[400px] h-[280px] relative flex flex-col justify-end items-center text-white sm:px-6 md:px-8 rounded-[17px] shadow-businnessShadow cursor-pointer hover:scale-110 hover:shadow-2xl transition-all duration-300">
+    <div className="w-full max-w-[400px] h-full relative flex flex-col justify-end items-center text-white md:px-8 rounded-[17px] shadow-businnessShadow cursor-pointer hover:scale-110 hover:shadow-2xl transition-all duration-300">
       {/* Image with styles */}
       <div className="relative w-full h-full">
         <Image
-          src={card.bgImg}
+          src={card.imgSrc}
           alt={card.title}
           width={400}
           height={400}
