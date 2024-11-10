@@ -29,6 +29,7 @@ const Header = () => {
         <div className="flex flex-col items-center justify-center h-full gap-20 w-full px-4">
           {/* Main Text Content */}
           <div className="flex flex-col items-center justify-center gap-10">
+<<<<<<< HEAD
             {/* Using TypedComponent with Framer Motion */}
             <motion.div
               initial={{ opacity: 0, y: -20 }}
@@ -47,6 +48,14 @@ const Header = () => {
               transition={{ duration: 1, delay: 0.5 }}
               className="text-2xl md:text-4xl leading-10 font-abhaya w-full text-center"
             >
+=======
+            {/* Using TypedComponent here with styles */}
+            <TypedComponent
+              text={typedTexts}
+              className="text-[28px] mt-40 sm:mt-0 md:text-[72px] uppercase font-cherry md:font-amlerian w-full text-center"
+            />
+            <p className="text-2xl md:text-4xl leading-10 font-abhaya w-full text-center">
+>>>>>>> 8c5b7e242eff088a1447f937801bcafa8c86e274
               With us, your ideas turn into innovative applications and your
               business <br /> takes leaps into the future
             </motion.p>

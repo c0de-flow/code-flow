@@ -59,7 +59,7 @@ const Footer = () => {
             </div>
             <div>
               {/* Title with dynamic text size for responsiveness */}
-              <h2 className="font-cherry text-xl md:text-3xl lg:text-5xl text-nowrap">
+              <h2 className="font-cherry text-xl md:text-3xl ml:text-5xl text-nowrap">
                 Code Flow
               </h2>
             </div>
@@ -79,7 +79,12 @@ const Footer = () => {
         </motion.div>
 
         {/* Vertical Line */}
+<<<<<<< HEAD
         <div className="border-l border-borderColor h-48 mx-5 lg:mx-10" />
+=======
+        {/* Vertical divider between the left and right sections */}
+        <div className="border-l border-borderColor h-48 mx-5 ml:mx-10" />
+>>>>>>> 8c5b7e242eff088a1447f937801bcafa8c86e274
 
         {/* Right side section with sections, support email, and socials */}
         <motion.div

@@ -17,11 +17,16 @@ const DownArrow = ({ otherClasses }: DownArrowProps) => {
   };
 
   return (
+<<<<<<< HEAD
     <motion.div
       className={`absolute bottom-[50px] hidden lg:block ${otherClasses} `}
       initial={{ opacity: 0, x: -100 }}
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 1 }}
+=======
+    <div
+      className={`absolute bottom-[50px] hidden ml:block ${otherClasses} `}
+>>>>>>> 8c5b7e242eff088a1447f937801bcafa8c86e274
     >
       {/* Arrow button styles and onclick function */}
       <button

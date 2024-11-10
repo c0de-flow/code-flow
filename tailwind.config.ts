@@ -42,9 +42,9 @@ const config: Config = {
       screens: {
         sm: '640px',
         md: '768px',
-        lg: '1024px', 
+        lg: '1024' ,
         xl: '1280px',
-        ml: '1440px',
+        ml: '1440px', 
         '2xl': '1536px',
       },
 
