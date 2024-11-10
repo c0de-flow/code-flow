@@ -1,5 +1,4 @@
 import React from "react";
-import DownArrow from "../down-arrow/DownArrow";
 
 export default function About() {
   return (
