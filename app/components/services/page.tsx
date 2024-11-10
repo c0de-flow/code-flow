@@ -5,7 +5,7 @@ export default function Services() {
   return (
     // Main container with background color, full width, minimum screen height, and center alignment
     <div
-      id="Services"
+      id="services"
       className="w-full min-h-screen bg-[#120C31] flex flex-col items-center justify-center pt-16 pb-5 md:pb-20 ml:pb-0 "
     >
       {/* Services header with background glow */}
