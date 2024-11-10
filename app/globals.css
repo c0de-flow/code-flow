@@ -123,3 +123,9 @@
     border: 2px solid transparent;
 }
 }
+
+.glow-effect {
+  text-shadow: 0 0 6px rgba(0, 178, 255, 0.9), 0 0 10px rgba(0, 178, 255, 0.7);
+}
+
+

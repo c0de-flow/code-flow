@@ -4,6 +4,7 @@ import Business from "./components/business/Business";
 import Footer from "./components/footer/Footer";
 import Header from "./components/header-components/Header";
 import Team from "./components/our-team/Team";
+import Contact from "./components/contact.tsx/contact";
 import Services from "./components/services/page";
 
 export default function Home() {
@@ -17,6 +18,8 @@ export default function Home() {
       <Services />
       <Team />
       <Business />
+      <Contact/>
+      <Footer />
     </>
   );
 }
