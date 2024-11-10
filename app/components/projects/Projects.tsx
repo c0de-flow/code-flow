@@ -1,3 +1,6 @@
+"use client";
+
+import { motion } from "framer-motion";
 import SectionTitle from "../sectionTitle/SectionTitle";
 import EllipseBackground from "../ellipse/EllipseBackground";
 import ProjectsCardDesktop from "./ProjectsCardDesktop";
@@ -10,6 +13,7 @@ const Projects = () => {
       id="projects"
       className="flex flex-col justify-center items-center py-20 relative"
     >
+      {/* Animated Section Title with scroll trigger */}
       <div className="relative md:mb-20">
         <SectionTitle title="Our Projects" />
         <EllipseBackground
@@ -23,17 +27,31 @@ const Projects = () => {
         />
       </div>
 
-      {/* Map through projectCard array for desktop screens */}
-      <div className="hidden md:flex flex-col items-center justify-center gap-10 text-white w-full overflow-hidden">
+      {/* Desktop project cards with scroll animation */}
+      <div className="hidden md:flex flex-col items-center justify-start gap-10 text-white w-full overflow-hidden">
         {projectCard.map((card, index) => (
-          <ProjectsCardDesktop key={index} card={card} index={index} />
+          <motion.div
+            key={index}
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1, delay: index * 0.2 }}
+          >
+            <ProjectsCardDesktop card={card} index={index} />
+          </motion.div>
         ))}
       </div>
 
-      {/* Map through projectCard array for mobile and small screens */}
+      {/* Mobile project cards with scroll fade in animation */}
       <div className="flex flex-col gap-8 items-center w-full custom-container md:hidden">
         {projectCard.map((card, index) => (
-          <ProjectsCardMobile key={index} card={card} />
+          <motion.div
+            key={index}
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1, delay: index * 0.2 }}
+          >
+            <ProjectsCardMobile card={card} />
+          </motion.div>
         ))}
       </div>
     </section>

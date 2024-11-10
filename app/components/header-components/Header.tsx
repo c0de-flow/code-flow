@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+
+import { motion } from "framer-motion";
 import Navbar from "./Navbar";
 import CustomButton from "../buttonComponent/CustomButton";
 import TypedComponent from "./TypedComponent";
@@ -27,23 +29,42 @@ const Header = () => {
         <div className="flex flex-col items-center justify-center h-full gap-20 w-full px-4">
           {/* Main Text Content */}
           <div className="flex flex-col items-center justify-center gap-10">
-            {/* Using TypedComponent here with styles */}
-            <TypedComponent
-              text={typedTexts}
-              className="text-[28px] mt-40 sm:mt-0 md:text-[72px] uppercase font-cherry md:font-algerian w-full text-center"
-            />
-            <p className="text-2xl md:text-4xl leading-10 font-abhaya w-full text-center">
+            {/* Using TypedComponent with Framer Motion */}
+            <motion.div
+              initial={{ opacity: 0, y: -20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, ease: "easeInOut" }}
+            >
+              <TypedComponent
+                text={typedTexts}
+                className="text-[28px] mt-40 sm:mt-0 md:text-[72px] uppercase font-cherry md:font-algerian w-full text-center"
+              />
+            </motion.div>
+
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 0.5 }}
+              className="text-2xl md:text-4xl leading-10 font-abhaya w-full text-center"
+            >
               With us, your ideas turn into innovative applications and your
               business <br /> takes leaps into the future
-            </p>
+            </motion.p>
           </div>
 
           {/* Header Buttons */}
-          <div className="flex flex-col md:flex-row justify-center items-center gap-10 md:gap-20 text-2xl md:text-4xl font-semibold w-full font-abhaya">
+          <motion.div className="flex flex-col md:flex-row justify-center items-center gap-10 md:gap-20 text-2xl md:text-4xl font-semibold w-full font-abhaya">
             {buttons.map((button, index) => (
-              <CustomButton key={index} label={button.label} />
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, scale: 0.5 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 1, delay: (index + 1) * 0.5 }}
+              >
+                <CustomButton label={button.label} />
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
 
           {/* Down Arrow Element, hidden on smaller screens */}
           <DownArrow otherClasses="left-20" />

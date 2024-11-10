@@ -14,7 +14,7 @@ const ProjectsCardDesktop = ({ card, index }: ProjectsCardProps) => {
   return (
     // Check for index to change display from flex-row or flex-row-reverse
     <div
-      className={`group flex justify-center items-center transition-transform duration-300 ${
+      className={`group flex justify-between items-center transition-transform duration-300 w-full ${
         index % 2 === 0 ? "" : "flex-row-reverse"
       } hover:cursor-pointer`}
     >

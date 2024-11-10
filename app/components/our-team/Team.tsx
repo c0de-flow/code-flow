@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { motion } from "framer-motion";
 import "swiper/css";
 import "swiper/css/pagination";
 import TeamMemberCard from "./TeamMemberCard";
@@ -28,12 +29,18 @@ const Team = () => {
       {/* Desktop team member cards */}
       <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-3 gap-40 text-white mt-40">
         {teamMembers.map((member, index) => (
-          <TeamMemberCard
+          <motion.div
             key={index}
-            name={member.name}
-            role={member.role}
-            imgSrc={member.imgSrc}
-          />
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: index * 0.1 }}
+          >
+            <TeamMemberCard
+              name={member.name}
+              role={member.role}
+              imgSrc={member.imgSrc}
+            />
+          </motion.div>
         ))}
       </div>
 

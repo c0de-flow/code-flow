@@ -1,6 +1,7 @@
-"use client"
+"use client";
 import React from "react";
 import { IoIosArrowRoundDown } from "react-icons/io";
+import { motion } from "framer-motion";
 
 interface DownArrowProps {
   otherClasses?: string;
@@ -16,8 +17,11 @@ const DownArrow = ({ otherClasses }: DownArrowProps) => {
   };
 
   return (
-    <div
+    <motion.div
       className={`absolute bottom-[50px] hidden lg:block ${otherClasses} `}
+      initial={{ opacity: 0, x: -100 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 1 }}
     >
       {/* Arrow button styles and onclick function */}
       <button
@@ -26,7 +30,7 @@ const DownArrow = ({ otherClasses }: DownArrowProps) => {
       >
         <IoIosArrowRoundDown className="text-5xl " />
       </button>
-    </div>
+    </motion.div>
   );
 };
 

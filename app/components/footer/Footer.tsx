@@ -1,9 +1,16 @@
+"use client";
 import Image from "next/image";
 import React from "react";
-import { FaFacebookF, FaInstagram, FaLinkedinIn, FaWhatsapp } from "react-icons/fa6";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedinIn,
+  FaWhatsapp,
+} from "react-icons/fa6";
 import FooterLinks from "./FooterLinks";
 import EllipseBackground from "../ellipse/EllipseBackground";
 import SocialMediaIcon from "../SocialMediaIcon";
+import { motion } from "framer-motion";
 
 const socialMediaLinks = [
   { Icon: FaFacebookF, label: "Facebook" },
@@ -19,24 +26,26 @@ const Footer = () => {
       <EllipseBackground
         width="150px"
         height="150px"
-        left="300px"
-        top="120px"
         backgroundColor="#F4A0FF"
-        otherClasses="hidden md:block"
+        otherClasses="hidden md:block absolute top-[120px] left-[300px]"
       />
+
       <EllipseBackground
         width="150px"
         height="150px"
-        bottom="0"
-        right="0"
         backgroundColor="#F4A0FF"
-        otherClasses="hidden md:block"
+        otherClasses="hidden md:block absolute bottom-0 right-0"
       />
 
       {/* Main footer content */}
       <div className="w-full flex justify-center items-center">
         {/* Left side section with Logo and title */}
-        <div className="flex flex-col justify-center items-center gap-5">
+        <motion.div
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+          className="flex flex-col justify-center items-center gap-5"
+        >
           {/* Logo and title aligned horizontally */}
           <div className="flex justify-center items-center gap-3">
             <div>
@@ -57,19 +66,28 @@ const Footer = () => {
           </div>
 
           {/* Social media icons shown only on small screens */}
-          <div className="flex justify-center items-center gap-x-4 md:hidden">
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 1, duration: 1 }}
+            className="flex justify-center items-center gap-x-4 md:hidden"
+          >
             {socialMediaLinks.map(({ Icon, label }) => (
-              <SocialMediaIcon key={label} Icon={Icon}/>
+              <SocialMediaIcon key={label} Icon={Icon} />
             ))}
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
 
         {/* Vertical Line */}
-        {/* Vertical divider between the left and right sections */}
         <div className="border-l border-borderColor h-48 mx-5 lg:mx-10" />
 
         {/* Right side section with sections, support email, and socials */}
-        <div className="flex flex-col justify-center items-start gap-5">
+        <motion.div
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+          className="flex flex-col justify-center items-start gap-5"
+        >
           {/* Footer links displayed as a list of navigation items */}
           <FooterLinks />
 
@@ -79,17 +97,24 @@ const Footer = () => {
           </div>
 
           {/* Social Media Icons shown only on medium and larger screens */}
-          <div className="hidden md:flex justify-center items-center gap-x-20">
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 1, duration: 1 }}
+            className="hidden md:flex justify-center items-center gap-x-20"
+          >
             {socialMediaLinks.map(({ Icon, label }) => (
-              <SocialMediaIcon key={label} Icon={Icon}/>
+              <SocialMediaIcon key={label} Icon={Icon} />
             ))}
-          </div>
+          </motion.div>
 
           {/* Footer text with copyright notice shown only on medium and larger screens */}
           <div className="hidden md:block">
-            <p className="font-abhaya">© 2024 All rights reserved to Code Flow</p>
+            <p className="font-abhaya">
+              © 2024 All rights reserved to Code Flow
+            </p>
           </div>
-        </div>
+        </motion.div>
       </div>
 
       {/* Support email displayed only on small screens */}
@@ -98,9 +123,15 @@ const Footer = () => {
       </div>
 
       {/* Footer text with copyright notice displayed only on small screens */}
-      <div>
-        <p className="font-abhaya md:hidden">© 2024 All rights reserved to Code Flow</p>
-      </div>
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ delay: 2, duration: 1 }}
+      >
+        <p className="font-abhaya md:hidden">
+          © 2024 All rights reserved to Code Flow
+        </p>
+      </motion.div>
     </footer>
   );
 };

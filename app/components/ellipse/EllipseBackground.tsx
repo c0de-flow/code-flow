@@ -1,4 +1,6 @@
+"use client";
 import React from "react";
+import { motion } from "framer-motion";
 
 interface EllipseBackgroundProps {
   width?: string;
@@ -11,6 +13,9 @@ interface EllipseBackgroundProps {
   opacity?: number;
   blur?: string;
   otherClasses?: string;
+  initialOpacity?: number;
+  whileInViewOpacity?: number;
+  transitionDuration?: number;
 }
 
 const EllipseBackground = function ({
@@ -25,10 +30,16 @@ const EllipseBackground = function ({
   right,
   bottom,
   otherClasses,
+  initialOpacity = 0,
+  whileInViewOpacity = 1,
+  transitionDuration = 1,
 }: EllipseBackgroundProps) {
   return (
-    <div
+    <motion.div
       className={`absolute pointer-events-none ${otherClasses}`}
+      initial={{ opacity: initialOpacity }}
+      whileInView={{ opacity: whileInViewOpacity }}
+      transition={{ duration: transitionDuration }}
       style={{
         width,
         height,
