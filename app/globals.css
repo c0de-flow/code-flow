@@ -113,3 +113,13 @@
 .swiper-pagination-bullet-active {
   @apply bg-swiperBullet !important;
 }
+/* SERVICE STAYLES */
+@layer utilities {
+  .gradient-border {
+    border-radius: 50px;
+    background:
+        linear-gradient(#120C31, #120C31) padding-box, 
+        linear-gradient(to bottom, rgba(89, 153, 187, 1) 0%, rgba(153, 153, 153, 0) 100%) border-box; 
+    border: 2px solid transparent;
+}
+}

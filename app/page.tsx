@@ -4,6 +4,7 @@ import Business from "./components/business/Business";
 import Footer from "./components/footer/Footer";
 import Header from "./components/header-components/Header";
 import Team from "./components/our-team/Team";
+import Services from "./components/services/page";
 
 export default function Home() {
   return (
@@ -13,9 +14,9 @@ export default function Home() {
       </Head>
       <Header />
       <About />
+      <Services />
       <Team />
       <Business />
-      <Footer />
     </>
   );
 }
