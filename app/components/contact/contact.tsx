@@ -30,7 +30,7 @@ export default function Contact() {
 
                     <ul className="text-white space-y-9 font-abhaya text-center lg:text-start text-2xl  lg:pr-16">
                         <li className="text-white font-medium">Talk to us</li>
-                        <li className="text-blue-400 font-semibold">Let's Get closer</li>
+                        <li className="text-blue-400 font-semibold">Let&apos;s Get closer</li>
                         <li className="text-white">Send us a message to learn more about our service</li>
                     </ul>
                     <ul className="text-white space-y-9 font-abhaya text-[18px] lg:pr-44 ">
