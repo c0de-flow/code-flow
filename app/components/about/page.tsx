@@ -4,7 +4,7 @@ import DownArrow from "../down-arrow/DownArrow";
 export default function About() {
   return (
     // Main container for the About section with background color and spacing adjustments
-    <div className="    flex flex-col-reverse md:flex-row w-full itmes-center justify-center min-h-screen pb-[360px] md:pb-12 lg:pb-0 pt-12 md:pt-28 lg:pt-36 lg:px-20 bg-[#120C31]">
+    <div id="about" className="flex flex-col-reverse md:flex-row w-full itmes-center justify-center min-h-screen pb-[360px] md:pb-12 lg:pb-0 pt-12 md:pt-28 lg:pt-36 lg:px-20 bg-[#120C31]">
       {/* Left section: contains the image background and history text card */}
       <div
         className="relative w-[70%] md:w-[50%] lg:w-[40%]  ml-5 h-80 md:h-[500px] lg:h-[622px] bg-cover bg-center rounded-[38px] lg:rounded-[83px]"
@@ -48,8 +48,6 @@ export default function About() {
             About Us
           </h3>
         </div>
-        {/* Downward arrow button for navigation, visible only on large screens */}
-        <DownArrow otherClasses="-right-4" />
       </div>
       {/* Decorative blurred background element in the top right corner */}
       <div className=" absolute top-0 right-40 w-60 h-48 bg-[#F4A0FF] opacity-[10%] blur-3xl rounded-[83px]"></div>

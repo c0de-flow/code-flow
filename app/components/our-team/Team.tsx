@@ -9,7 +9,7 @@ import teamMembers from "@/app/constants/TeamMembers";
 import SectionTitle from "../sectionTitle/SectionTitle";
 import EllipseBackground from "../ellipse/EllipseBackground";
 import MobileTeamMemberCard from "./MobileTeamMemberCard";
-import { Pagination } from "swiper/modules";
+import { Pagination, Autoplay } from "swiper/modules";
 
 const Team = () => {
   // State to keep track of the active slide index
@@ -17,16 +17,12 @@ const Team = () => {
 
   return (
     <section
-      id="our-team"
+      id="team"
       className="flex flex-col justify-center items-center py-20 relative"
     >
       <div className="relative md:mb-20">
         <SectionTitle title="Our Team" />
-        <EllipseBackground
-          blur="130px"
-          top="-300px"
-          left="-150px"
-        />
+        <EllipseBackground blur="130px" top="-300px" left="-150px" />
       </div>
 
       {/* Desktop team member cards */}
@@ -45,13 +41,14 @@ const Team = () => {
       <div className="block md:hidden text-white w-full px-4">
         {/* Swiper styles and functionalities */}
         <Swiper
-          modules={[Pagination]}
+          modules={[Pagination, Autoplay]}
           spaceBetween={32}
           slidesPerView={2}
           centeredSlides={true}
           pagination={true}
           onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
           onSwiper={(swiper) => setActiveIndex(swiper.activeIndex)}
+          autoplay={{ delay: 2000, disableOnInteraction: false }}
         >
           {/* Mapping over the team members for mobile screen card component */}
           {teamMembers.map((member, index) => (

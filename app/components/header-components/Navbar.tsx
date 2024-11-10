@@ -10,12 +10,12 @@ const Navbar = () => {
 
   // Navlinks array for mapping
   const navLinks = [
-    { href: "/", label: "Home" },
-    { href: "/about", label: "About Us" },
-    { href: "/services", label: "Services" },
-    { href: "/team", label: "Our Team" },
-    { href: "/business", label: "Our Business" },
-    { href: "/contact", label: "Contact" },
+    { href: "#", label: "Home" },
+    { href: "#about", label: "About Us" },
+    { href: "#services", label: "Services" },
+    { href: "#team", label: "Our Team" },
+    { href: "#projects", label: "Our Projects" },
+    { href: "#contact", label: "Contact" },
   ];
 
   return (

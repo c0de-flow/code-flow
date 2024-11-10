@@ -1,11 +1,11 @@
 import Head from "next/head";
 import About from "./components/about/page";
-import Business from "./components/business/Business";
 import Footer from "./components/footer/Footer";
 import Header from "./components/header-components/Header";
 import Team from "./components/our-team/Team";
 import Contact from "./components/contact/contact";
 import Services from "./components/services/page";
+import Projects from "./components/projects/Projects";
 
 export default function Home() {
   return (
@@ -17,7 +17,7 @@ export default function Home() {
       <About />
       <Services />
       <Team />
-      <Business />
+      <Projects/>
       <Contact/>
       <Footer />
     </>

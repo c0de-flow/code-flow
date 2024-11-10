@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-interface BusinessCardProps {
+interface ProjectsCardProps {
   card: {
     imgSrc: string;
     speciality: string;
@@ -10,7 +10,7 @@ interface BusinessCardProps {
   index: number;
 }
 
-const BusinessCardDesktop = ({ card, index }: BusinessCardProps) => {
+const ProjectsCardDesktop = ({ card, index }: ProjectsCardProps) => {
   return (
     // Check for index to change display from flex-row or flex-row-reverse
     <div
@@ -43,4 +43,4 @@ const BusinessCardDesktop = ({ card, index }: BusinessCardProps) => {
   );
 };
 
-export default BusinessCardDesktop;
+export default ProjectsCardDesktop;

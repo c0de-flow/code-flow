@@ -1,4 +1,4 @@
-const businessCard = [
+const projectCard = [
   {
     imgSrc: "/business/business1.png",
     speciality: "Web Development",
@@ -13,4 +13,4 @@ const businessCard = [
   },
 ];
 
-export default businessCard;
+export default projectCard;
