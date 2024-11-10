@@ -20,7 +20,7 @@ const Team = () => {
       id="our-team"
       className="flex flex-col justify-center items-center py-20 relative"
     >
-      <div className="relative md:mb-20">
+      <div className="relative">
         <SectionTitle title="Our Team" />
         <EllipseBackground
           blur="130px"

@@ -34,11 +34,11 @@ const Footer = () => {
       />
 
       {/* Main footer content */}
-      <div className="w-full flex justify-center items-center">
+      <div className="w-full flex justify-start sm:justify-center items-center ml-2 md:ml-0">
         {/* Left side section with Logo and title */}
         <div className="flex flex-col justify-center items-center gap-5">
           {/* Logo and title aligned horizontally */}
-          <div className="flex justify-center items-center gap-3">
+          <div className="flex justify-center items-center sm:gap-3">
             <div>
               <Image
                 src={"/logo.png"}
@@ -57,14 +57,13 @@ const Footer = () => {
           </div>
 
           {/* Social media icons shown only on small screens */}
-          <div className="flex justify-center items-center gap-x-4 md:hidden">
+          <div className="flex justify-center items-center gap-x-2 md:hidden">
             {socialMediaLinks.map(({ Icon, label }) => (
               <SocialMediaIcon key={label} Icon={Icon}/>
             ))}
           </div>
         </div>
 
-        {/* Vertical Line */}
         {/* Vertical divider between the left and right sections */}
         <div className="border-l border-borderColor h-48 mx-5 lg:mx-10" />
 
@@ -93,13 +92,13 @@ const Footer = () => {
       </div>
 
       {/* Support email displayed only on small screens */}
-      <div className="md:hidden">
+      <div className="md:hidden mt-10">
         <span>Support: CodeFlow@gmail.com</span>
       </div>
 
       {/* Footer text with copyright notice displayed only on small screens */}
-      <div>
-        <p className="font-abhaya md:hidden">© 2024 All rights reserved to Code Flow</p>
+      <div className="md:hidden">
+        <p className="font-abhaya">© 2024 All rights reserved to Code Flow</p>
       </div>
     </footer>
   );

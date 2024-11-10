@@ -12,7 +12,7 @@ const FooterLinks = () => {
   ];
 
   return (
-    <div className="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-2 lg:gap-5 text-center text-xs md:text-lg lg:text-xl">
+    <div className="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-2 lg:gap-5 text-center text-xs md:text-lg lg:text-xl text-nowrap">
       {links.map((link, index) => (
         <Link
           key={index}
