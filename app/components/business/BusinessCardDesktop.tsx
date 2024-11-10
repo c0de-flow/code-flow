@@ -16,13 +16,13 @@ const BusinessCardDesktop = ({ card, index }: BusinessCardProps) => {
     <div
       className={`group flex justify-center items-center transition-transform duration-300 ${
         index % 2 === 0 ? "" : "flex-row-reverse"
-      } hover:cursor-pointer`}
+      } hover:cursor-pointer max-w-[1000px]`}
     >
       {/* Image with zoom-in on hover */}
       <Image
         src={card.imgSrc}
         alt={card.title}
-        width={400}
+        width={440}
         height={260}
         className="w-full z-10 transform transition-transform duration-300 group-hover:scale-105"
       />
