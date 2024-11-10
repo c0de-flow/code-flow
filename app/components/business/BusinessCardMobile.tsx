@@ -25,11 +25,11 @@ const BusinessCardMobile = ({ card }: BusinessCardProps) => {
 
       {/* Gradient Overlays */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent to-bodyBackground rounded-[17px]"></div>
-      <div className="absolute inset-0 rounded-[9px] bg-gradient-to-b from-transparent to-businessOverlay shadow-lg"></div>
+      <div className="absolute inset-0 rounded-[9px] bg-gradient-to-b from-transparent to-businessOverlay shadow-ml"></div>
 
       {/* Card Content */}
       <div className="gap-2 flex flex-col justify-end items-center text-center z-10 absolute bottom-5">
-        <h4 className="font-abril text-lg">{card.speciality}</h4>
+        <h4 className="font-abril text-ml">{card.speciality}</h4>
         <p className="font-abhaya text-xs">{card.title}</p>
         <p className="font-abhaya text-xs">{card.description}</p>
       </div>

@@ -40,7 +40,7 @@ const Slider2 = () => {
                 : "hidden"
             }`}
           >
-            <p className="text-xl md:text-lg sm:text-base font-abhaya">
+            <p className="text-xl md:text-ml sm:text-base font-abhaya">
               {member.name}
             </p>
             <p className="md:text-sm sm:text-xs font-abhaya mb-2">

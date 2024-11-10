@@ -24,14 +24,14 @@ const Navbar = () => {
         {/* Logo section */}
         <div className="flex items-center pl-4">
           <Image src="/logo.png" alt="logo" width={45} height={35} className="mr-2" />
-          <Link className="font-algerian text-3xl text-white" href="/">
+          <Link className="font-amlerian text-3xl text-white" href="/">
             CODE FLOW
           </Link>
         </div>
 
         {/* Centered nav links, visible on medium and larger screens */}
-        <div className="hidden lg:flex flex-grow justify-center">
-          <ul className="flex items-center md:gap-5 md:text-lg lg:gap-10 lg:text-[22px]">
+        <div className="hidden ml:flex flex-grow justify-center">
+          <ul className="flex items-center md:gap-5 md:text-ml ml:gap-10 ml:text-[22px]">
             {navLinks.map(({ href, label }) => (
               <li key={href}>
                 <Link
@@ -46,7 +46,7 @@ const Navbar = () => {
         </div>
 
         {/* Navbar toggler icon, visible on small screens only */}
-        <div className="lg:hidden flex items-center justify-end pr-4 relative">
+        <div className="ml:hidden flex items-center justify-end pr-4 relative">
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="outline-none"
@@ -73,10 +73,10 @@ const Navbar = () => {
         id="mobile-menu"
         className={`${
           isOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
-        } w-full bg-[#111827] shadow-lg transition-all duration-500 ease-in-out overflow-hidden`}
+        } w-full bg-[#111827] shadow-ml transition-all duration-500 ease-in-out overflow-hidden`}
         style={{ transitionProperty: "max-height, opacity" }}
       >
-        <ul className="flex flex-col items-start py-4 px-6 space-y-4 text-lg text-white">
+        <ul className="flex flex-col items-start py-4 px-6 space-y-4 text-ml text-white">
           {navLinks.map(({ href, label }) => (
             <li key={href}>
               <Link

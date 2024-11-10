@@ -30,7 +30,7 @@ const Team = () => {
       </div>
 
       {/* Desktop team member cards */}
-      <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-3 gap-40 text-white mt-40">
+      <div className="hidden md:grid md:grid-cols-2 ml:grid-cols-3 gap-40 text-white mt-40">
         {teamMembers.map((member, index) => (
           <TeamMemberCard
             key={index}
