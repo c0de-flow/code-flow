@@ -36,13 +36,13 @@ export default function Contact() {
                 />
             </div>
 
-            <div className="flex flex-col lg:flex-row w-full justify-center items-center px-6 lg:px-44 py-12 ">
-                <div className=" w-full lg:w-[50%] flex flex-col space-y-8 justify-center items-center lg:px-12 ">
+            <div className="flex flex-col ml:flex-row w-full justify-center items-center px-6 ml:px-44 py-12 ">
+                <div className=" w-full ml:w-[50%] flex flex-col space-y-8 justify-center items-center ml:px-12 ">
                     <motion.ul
                         initial={{ opacity: 0, x: -50 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 1 }}
-                        className="text-white space-y-9 font-abhaya text-center lg:text-start text-2xl lg:pr-16"
+                        className="text-white space-y-9 font-abhaya text-center ml:text-start text-2xl ml:pr-16"
                     >
                         <li className="text-white font-medium">Talk to us</li>
                         <li className="text-blue-400 font-semibold">Let&apos;s Get closer</li>
@@ -54,7 +54,7 @@ export default function Contact() {
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1 }}
-                        className="text-white space-y-9 font-abhaya text-[18px] lg:pr-44 "
+                        className="text-white space-y-9 font-abhaya text-[18px] ml:pr-44 "
                     >
                         <ContactIcons icon={IoLocationSharp} text='"123 Nile Street, Mohandessin, Giza, Egypt"' />
                         <ContactIcons icon={MdOutlineSendToMobile} text='0102972723 / 0945875985' className='pl-4' />
@@ -65,7 +65,7 @@ export default function Contact() {
 
                 {/* Form Fields with animation */}
                 <motion.form
-                    className="w-[80%] grid grid-cols-1 gap-x-6 gap-y-9 font-abhaya md:grid-cols-2 lg:w-[52%] pt-14 lg:pt-2"
+                    className="w-[80%] grid grid-cols-1 gap-x-6 gap-y-9 font-abhaya md:grid-cols-2 ml:w-[52%] pt-14 ml:pt-2"
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     transition={{ duration: 1 }}
@@ -116,7 +116,7 @@ export default function Contact() {
 
                     {/* Send Button with animation */}
                     <motion.div
-                        className="col-span-1 md:col-span-2 flex justify-center lg:justify-start"
+                        className="col-span-1 md:col-span-2 flex justify-center ml:justify-start"
                         initial={{ opacity: 0, scale: 0.8 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.5, delay: 0.8 }}
