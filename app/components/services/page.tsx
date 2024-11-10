@@ -1,57 +1,37 @@
-"use client"
+"use client";
 import Image from "next/image";
 import React from "react";
-import { motion } from "framer-motion"; 
+import { motion } from "framer-motion";
 import SectionTitle from "../sectionTitle/SectionTitle";
 
 export default function Services() {
   return (
     // Main container with background color, full width, minimum screen height, and center alignment
     <div
-<<<<<<< HEAD
       id="services"
       className="w-full min-h-screen bg-[#120C31] flex flex-col items-center justify-center pt-16 pb-5 md:pb-20 ml:pb-0"
-=======
-      id="Services"
-      className="w-full min-h-screen bg-[#120C31] flex flex-col items-center justify-center pt-16 pb-5 md:pb-20 ml:pb-0 "
->>>>>>> 8c5b7e242eff088a1447f937801bcafa8c86e274
     >
       {/* Services header with background glow */}
       <div className="relative ml:mr-14">
         <div className="absolute inset-4 ml:inset-3 bg-[#2167FC] opacity-[100%] blur-3xl"></div>
-<<<<<<< HEAD
         <SectionTitle title="Services" />
-=======
-        <h3 className="font-aladin text-[50px] ml:text-[48px] text-white text-opacity-75 relative">
-          Services
-        </h3>
->>>>>>> 8c5b7e242eff088a1447f937801bcafa8c86e274
       </div>
 
       {/* Container for service cards with responsive layout */}
       <div className="flex flex-col ml:flex-row items-center justify-center ml:pt-28 ml:space-x-14">
         {/* Marketing Service Card */}
-<<<<<<< HEAD
         <motion.div
           className="w-64 md:w-96 ml:w-[400px] md:h-[500px] ml:h-[460px] px-4 text-white mt-[87px] flex flex-col items-center mb-20 ml:mb-0 gradient-border"
-          initial={{ opacity: 0, y: 50 }} 
-          whileInView={{ opacity: 1, y: 0 }} 
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeInOut" }}
         >
-=======
-        <div className="w-64 md:w-96 ml:w-[400px] md:h-[500px] ml:h-[460px] px-4 text-white mt-[87px] flex flex-col items-center mb-20 ml:mb-0 gradient-border">
->>>>>>> 8c5b7e242eff088a1447f937801bcafa8c86e274
           {/* Image for Marketing service */}
           <Image
             src="/services/Marketing.png"
             alt="Web Application Icon"
-<<<<<<< HEAD
-            width={240}
-            height={240}
-=======
             width={240} // Specify width
             height={240} // Specify height
->>>>>>> 8c5b7e242eff088a1447f937801bcafa8c86e274
             className="w-[240px]"
           />
 
@@ -72,27 +52,18 @@ export default function Services() {
         </motion.div>
 
         {/* Web Application Service Card */}
-<<<<<<< HEAD
         <motion.div
           className="w-64 md:w-96 ml:w-[450px] md:h-[490px] ml:h-[550px] py-6 px-4 ml:py- ml:px-8 rounded-[52px] text-white flex flex-col items-center my-0 md:my-20 ml:my-0 gradient-border"
-          initial={{ opacity: 0, y: 50 }} 
-          whileInView={{ opacity: 1, y: 0 }} 
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeInOut" }}
         >
-=======
-        <div className="w-64 md:w-96 ml:w-[450px] md:h-[490px] ml:h-[550px] py-6 px-4 ml:py- ml:px-8 rounded-[52px] text-white flex flex-col items-center my-0 md:my-20 ml:my-0 gradient-border">
->>>>>>> 8c5b7e242eff088a1447f937801bcafa8c86e274
           {/* Image for Web Application service */}
           <Image
             src="/services/wepSVG.png"
             alt="Web Application Icon"
-<<<<<<< HEAD
-            width={275}
-            height={275}
-=======
             width={240} // Specify width
             height={240} // Specify height
->>>>>>> 8c5b7e242eff088a1447f937801bcafa8c86e274
             className="w-[275px]"
           />
 
@@ -112,29 +83,19 @@ export default function Services() {
         </motion.div>
 
         {/* Mobile Application Service Card */}
-<<<<<<< HEAD
         <motion.div
           className="w-64 md:w-96 ml:w-[400px] md:h-[400px] ml:h-[460px] md:px-4 rounded-[52px] text-white mt-[87px] flex flex-col items-center gradient-border"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeInOut" }}
         >
-=======
-        <div className="w-64 md:w-96 ml:w-[400px] md:h-[400px] ml:h-[460px] md:px-4 rounded-[52px] text-white mt-[87px] flex flex-col items-center  gradient-border">
->>>>>>> 8c5b7e242eff088a1447f937801bcafa8c86e274
           {/* Image for Mobile Application service */}
           <Image
             src="/services/phone-call.png"
             alt="Mobile Application Icon"
-<<<<<<< HEAD
             width={250}
             height={250}
             className="w-[250px]"
-=======
-            width={240} // Specify width
-            height={240} // Specify height
-            className="w-[250px]  "
->>>>>>> 8c5b7e242eff088a1447f937801bcafa8c86e274
           />
 
           {/* Title with glow effect */}

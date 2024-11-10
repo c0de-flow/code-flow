@@ -25,11 +25,8 @@ const ProjectsCardMobile = ({ card }: ProjectsCardProps) => {
 
       {/* Gradient Overlays */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent to-bodyBackground rounded-[17px]"></div>
-<<<<<<< HEAD:app/components/projects/ProjectsCardMobile.tsx
-      <div className="absolute inset-0 rounded-[9px] bg-gradient-to-b from-transparent to-ProjectsOverlay shadow-lg"></div>
-=======
+
       <div className="absolute inset-0 rounded-[9px] bg-gradient-to-b from-transparent to-businessOverlay shadow-ml"></div>
->>>>>>> 8c5b7e242eff088a1447f937801bcafa8c86e274:app/components/business/BusinessCardMobile.tsx
 
       {/* Card Content */}
       <div className="gap-2 flex flex-col justify-end items-center text-center z-10 absolute bottom-5">
