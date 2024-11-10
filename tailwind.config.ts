@@ -15,6 +15,7 @@ const config: Config = {
         darkBlue : "#1A1240",
         lightGray: "#FFFFFFBF",
         swiperBullet: "#27427B",
+        contactShadow: "0px 4px 30px #F4A0FF",
         businessOverlay: "rgba(54,37,151,0.8)",
         "section-title": "rgba(255, 255, 255, 0.75)",
         "mobile-team-border": "rgba(255, 255, 255, 0.1)",
