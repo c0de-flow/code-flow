@@ -17,7 +17,7 @@ const FooterLinks = () => {
         <Link
           key={index}
           href={link.href}
-          className="font-abhaya text-[22px] text-borderColor"
+          className="font-abhaya text-[22px] text-borderColor nav-link"
         >
           {link.label}
         </Link>
