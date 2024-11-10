@@ -23,10 +23,6 @@ const Team = () => {
       <div className="relative md:mb-20">
         <SectionTitle title="Our Team" />
         <EllipseBackground
-          width="395px"
-          height="395px"
-          backgroundColor="rgba(33, 103, 252, 0.1)"
-          opacity={1}
           blur="130px"
           top="-300px"
           left="-150px"
