@@ -23,7 +23,7 @@ export default function Contact() {
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1 }}
                 >
-                    <SectionTitle title="Contact" />
+                    <SectionTitle title="Contact" className='text-5xl' />
                 </motion.div>
                 <EllipseBackground
                     width="395px"

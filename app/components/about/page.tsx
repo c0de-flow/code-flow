@@ -1,55 +1,72 @@
 import React from "react";
+import SectionTitle from "../sectionTitle/SectionTitle";
+import ChoiceBox from "./choiceBox";
 
 export default function About() {
   return (
-    // Main container for the About section with background color and spacing adjustments
-    <div id="about" className="flex flex-col-reverse md:flex-row w-full itmes-center justify-center min-h-screen pb-[360px] md:pb-12 lg:pb-0 pt-12 md:pt-28 lg:pt-36 lg:px-20 bg-[#120C31]">
-      {/* Left section: contains the image background and history text card */}
-      <div
-        className="relative w-[70%] md:w-[50%] lg:w-[40%]  ml-5 h-80 md:h-[500px] lg:h-[622px] bg-cover bg-center rounded-[38px] lg:rounded-[83px]"
-        style={{ backgroundImage: "url('/aboutsec.jfif')" }}
-      >
-        {/* Decorative blurred background element positioned on the left side */}
-        <div className=" hidden lg:block absolute top-48  lg:-left-44 w-64 h-72 bg-[#F4A0FF] opacity-[10%] blur-3xl rounded-[83px]"></div>
-        {/* Decorative blurred background element positioned on the left side */}
-        <div
-          className="absolute top-56 -right-20 md:top-[180px]  md:-right-[275px] lg:top-[220px]  lg:-right-[340px] w-64 md:w-96 lg:w-[550px] md:h-80 lg:h-[402px] py-6 px-4 lg:py-8 lg:px-8  bg-opacity-90 bg-[#120C31]
-         rounded-[16px] text-white  
-          "
-          style={{
-            boxShadow: "inset 0px 6px 4px rgba(100, 219, 254, 0.2)",
-          }}
-        >
-          {/* Title of the history section */}
-          <h3 className=" text-center font-abhaya font-extrabold lg:text-[40px] mb-6">
-            Our company history
-          </h3>
-          {/* Description paragraph about the company */}
-          <p className="font-abhaya font-normal lg:text-[20px]">
-            We are a company specialized in advertising and digital business
-            development, providing innovative solutions for creating websites
-            and applications. We work to transform your ideas into distinctive
-            digital experiences that contribute to enhancing your brand presence
-            and expanding the scope of your business. Thanks to our team of
-            experts, we design integrated websites and applications that meet
-            your needs and achieve your goals
-          </p>
+    <section
+      id="contact"
+      className="min-h-screen bg-bodyBackground pt-56 pb-20 flex flex-col"
+    >
+      <div className="relative flex justify-center pb-20 md:pb-40 ml:pb-0 ml:pl-64 ">
+        <SectionTitle title="About Us"  className="text-5xl"/>
+      </div>
+      <div className="w-full flex flex-col ml:flex-row justify-center pl-10  ml:pl-8 ml:mt-0">
+        <div className="w-full md:w-[70%] ml:w-[33%] ml-10 ml:pl-0 pt-10 f  ">
+
+          <div className="flex items-center justify-center relative">
+            <div className="relative border-custom h-[200px] md:h-[390px] ml:h-[490px]">
+              <div
+                className="absolute -top-10 md:-top-5 ml:-top-[12px] -left-12 ml:-left-28 w-full h-40 md:h-56 ml:h-72 bg-bodyBackground z-10"
+              >
+                <img
+                  src="/about/image 10.png"
+                  alt="Image 1"
+                  className="absolute -top-16 md:-top-48 ml:-top-52 scale-100 md:scale-125 left-0 ml:left-14 z-40 transform translate-x-4 -translate-y-4 rounded-md"
+                />
+              </div>
+              <img
+                src="/about/image 11.png"
+                alt="Image 2"
+                className="absolute -bottom-10 md:-bottom-32 ml:-bottom-20 -right-9 scale-90 ml:scale-125 z-30 transform -translate-x-4 translate-y-4 rounded-md"
+              />
+            </div>
+
+            <div className="flex flex-col items-center ml-10  sm:flex sm:space-y-7 ml:hidden">
+              <SectionTitle title="Why choose " className="text-[20px]" />
+              <div className="flex flex-col space-y-5 mt-7">
+                <ChoiceBox text="Quality" className="text-xl w-16 h-20" />
+                <ChoiceBox text="Trust" className="text-xl w-16 h-20" />
+                <ChoiceBox text="Fast" className="text-xl w-16 h-20" />
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+
+        <div className="w-full ml:w-[40%] flex flex-col ml:pl-20 mb-40">
+          <div className="w-full text-white font-abhaya text-[20px] pt-20  md:pt-56 ml:pt-10">
+            <p>
+              We are a company specialized in advertising and digital business development,
+              providing innovative solutions for creating websites and applications.
+              We work to transform your ideas into distinctive digital experiences that
+              contribute to enhancing your brand presence and expanding the scope of your business.
+              Thanks to our team of experts, we design integrated websites and applications that meet your needs and achieve your goals.
+            </p>
+          </div>
+
+
+          <div className="hidden ml:flex flex-col items-center mt-24">
+            <SectionTitle title="Why choose "  className="text-5xl"/>
+            <div className="flex space-x-4 md:space-x-16 mt-20">
+              <ChoiceBox text="Quality" className="text-4xl w-32 h-32  " />
+              <ChoiceBox text="Trust" className="text-4xl  w-32 h-32  " />
+              <ChoiceBox text="fast" className="text-4xl  w-32 h-32 " />
+            </div>
+          </div>
         </div>
       </div>
-      {/* Right section: contains the "About Us" title and a navigation button */}
-      <div className=" relative w-full md:w-[40%] flex flex-col items-center lg:mt-20">
-        {/* "About Us" header with a blurred background effect */}
-        <div className="relative">
-          {/* Decorative blurred background behind the "About Us" title */}
-          <div className="absolute inset-4 lg:inset-12 bg-[#2167FC] opacity-[100%] blur-3xl rounded-[83px] "></div>
-          {/* "About Us" title */}
-          <h3 className="font-aladin text-[50px] lg:text-[64px] lg:pr-28 text-white text-opacity-75 mb-8 relative z-10">
-            About Us
-          </h3>
-        </div>
-      </div>
-      {/* Decorative blurred background element in the top right corner */}
-      <div className=" absolute top-0 right-40 w-60 h-48 bg-[#F4A0FF] opacity-[10%] blur-3xl rounded-[83px]"></div>
-    </div>
+    </section>
   );
 }

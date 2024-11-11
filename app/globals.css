@@ -96,7 +96,7 @@ html {
 /* OUR-TEAM STYLES */
 
 .section-title {
-  @apply text-5xl text-section-title font-aladin;
+  @apply  text-section-title font-aladin;
   text-shadow: 0px 0px 60px rgba(33, 103, 252, 0.72);
 }
 
@@ -133,3 +133,26 @@ html {
 .glow-effect {
   text-shadow: 0 0 6px rgba(0, 178, 255, 0.9), 0 0 10px rgba(0, 178, 255, 0.7);
 }
+
+.border-custom {
+  @apply w-full rounded-lg;
+  border-top-width: 7px;
+  border-right-width: 7px;
+  border-bottom-width: 6px;
+  border-left-width: 6px;
+  border-top-color: #5999BB;
+  border-right-color: #5999BB;
+  border-bottom-color: #352451;
+  border-left-color: #352451;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 70px;
+}
+.border-choose {
+  @apply border-2 border-[#5999BB];
+  border-top-right-radius: 0;
+  opacity: 53%;
+  border-bottom-left-radius: 30px;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
