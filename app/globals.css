@@ -2,8 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+/* GENERAL STYLES */
 html {
   scroll-behavior: smooth;
+}
+
+.section-container {
+  @apply md:px-40;
 }
 
 /* DECLARE FONTS FOR TAILWIND CLASSES USE */
