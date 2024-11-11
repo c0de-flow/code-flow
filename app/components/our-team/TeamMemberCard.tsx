@@ -25,7 +25,7 @@ function TeamMemberCard({ name, role, imgSrc }: TeamMemberCardProps) {
 
       {/* Team Member Info */}
       <p className="text-xl font-abhaya">{name}</p>
-      <p className="font-abhaya mb-2">{role}</p>
+      <p className="font-abhaya mb-2 md:text-nowrap">{role}</p>
     </div>
   );
 }

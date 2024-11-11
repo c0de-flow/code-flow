@@ -11,7 +11,7 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="flex flex-col justify-center items-center py-20 relative"
+      className="section-container flex flex-col justify-center items-center py-20 relative"
     >
       {/* Animated Section Title with scroll trigger */}
       <div className="relative md:mb-20">
@@ -35,6 +35,7 @@ const Projects = () => {
             initial={{ opacity: 0, x: -100 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, delay: index * 0.2 }}
+            className="w-full"
           >
             <ProjectsCardDesktop card={card} index={index} />
           </motion.div>
