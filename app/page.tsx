@@ -1,5 +1,5 @@
 import Head from "next/head";
-import About from "./components/about/page";
+import About from "./components/about/about";
 import Footer from "./components/footer/Footer";
 import Header from "./components/header-components/Header";
 import Team from "./components/our-team/Team";

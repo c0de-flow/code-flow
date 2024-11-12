@@ -135,7 +135,7 @@ html {
 }
 
 .border-custom {
-  @apply w-full rounded-lg;
+  @apply rounded-lg;
   border-top-width: 7px;
   border-right-width: 7px;
   border-bottom-width: 6px;
