@@ -8,7 +8,18 @@ import DownArrow from "../down-arrow/DownArrow";
 
 const Header = () => {
   // Define Buttons Data
-  const buttons = [{ label: "Services" }, { label: "Contact" }];
+  const buttons = [
+    { label: "Services", target: "services" },
+    { label: "Contact", target: "contact" },
+  ];
+
+  // Scroll to a section by ID
+  const handleScroll = (id: string) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   // Text for Typed Component
   const typedTexts = [
@@ -71,7 +82,10 @@ const Header = () => {
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 1, delay: (index + 1) * 0.5 }}
               >
-                <CustomButton label={button.label} />
+                <CustomButton
+                  label={button.label}
+                  onClick={() => handleScroll(button.target)}
+                />
               </motion.div>
             ))}
           </motion.div>
