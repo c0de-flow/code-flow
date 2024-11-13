@@ -22,9 +22,9 @@ const ProjectsCardDesktop = ({ card, index }: ProjectsCardProps) => {
       <Image
         src={card.imgSrc}
         alt={card.title}
-        width={400}
+        width={440}
         height={260}
-        className="w-full z-10 transform transition-transform duration-300 group-hover:scale-105"
+        className="max-w-full z-10 transform transition-transform duration-300 group-hover:scale-105"
       />
 
       {/* Content area with subtle floating effect and shadow on hover */}
