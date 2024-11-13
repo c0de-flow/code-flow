@@ -19,7 +19,7 @@ function TeamMemberCard({ name, role, imgSrc }: TeamMemberCardProps) {
           alt={name}
           width={160}
           height={198}
-          className="relative py-2 z-10"
+          className="relative py-2 z-10 max-h-[198px]"
         />
       </div>
 

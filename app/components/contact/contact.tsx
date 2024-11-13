@@ -39,7 +39,6 @@ export default function Contact() {
                     left="-150px"
                 />
             </div>
-          <SectionTitle title="Contact" />
         </motion.div>
         <EllipseBackground
           width="395px"

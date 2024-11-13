@@ -20,7 +20,7 @@ const MobileTeamMemberCard = ({
         alt={name}
         width={190}
         height={235}
-        className="rounded-xl py-2"
+        className="rounded-xl py-2 max-h-[198px]"
       />
       {/* Overlay text for the mobile screen images */}
       <div className="absolute bottom-0 flex flex-col justify-center items-center rounded-ml bg-mobile-team-bg w-full">

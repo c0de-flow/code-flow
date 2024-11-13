@@ -28,7 +28,7 @@ const Team = () => {
 
       {/* Desktop team member cards */}
       <div className="hidden md:flex md:justify-center w-full">
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-40 text-white mt-40 w-full">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-40 gap-y-60 text-white mt-40 w-full">
           {teamMembers.map((member, index) => (
             <motion.div
               key={index}
