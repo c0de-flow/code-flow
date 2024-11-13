@@ -9,7 +9,7 @@ import {
 } from "react-icons/fa6";
 import FooterLinks from "./FooterLinks";
 import EllipseBackground from "../ellipse/EllipseBackground";
-import SocialMediaIcon from "../SocialMediaIcon";
+import SocialMediaIcon from "./SocialMediaIcon";
 import { motion } from "framer-motion";
 
 const socialMediaLinks = [

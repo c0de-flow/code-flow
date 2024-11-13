@@ -14,7 +14,7 @@ export default function Services() {
       {/* Services header with background glow */}
       <div className="relative ml:mr-14">
         <div className="absolute inset-4 ml:inset-3 bg-[#2167FC] opacity-[100%] blur-3xl"></div>
-        <SectionTitle title="Services" />
+        <SectionTitle title="Services" className="text-5xl" />
       </div>
 
       {/* Container for service cards with responsive layout */}

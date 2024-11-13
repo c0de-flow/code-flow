@@ -1,5 +1,4 @@
 import React from "react";
-
 export default function About() {
   return (
     // Main container for the About section with background color and spacing adjustments

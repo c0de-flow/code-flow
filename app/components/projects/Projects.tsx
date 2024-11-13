@@ -15,7 +15,7 @@ const Projects = () => {
     >
       {/* Animated Section Title with scroll trigger */}
       <div className="relative md:mb-20">
-        <SectionTitle title="Our Projects" />
+        <SectionTitle title="Our Projects " className="text-5xl" />
         <EllipseBackground
           width="395px"
           height="395px"
