@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function DesktopSection(): JSX.Element {
   // Motion variants for image animation
@@ -27,7 +28,7 @@ export default function DesktopSection(): JSX.Element {
           whileInView="visible"
           variants={imageVariants}
         >
-          <img
+          <Image
             src="/about/image 10.png"
             alt="Image 1"
             className="absolute md:-top-48 ml:-top-52 md:scale-125 ml:left-14 z-40 transform translate-x-4 rounded-md"

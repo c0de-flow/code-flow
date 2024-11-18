@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import SectionTitle from "../sectionTitle/SectionTitle";
 import ChoiceBox from "./choiceBox";
+import Image from "next/image";
 
 export default function MobileSection(): JSX.Element {
   // Motion variants for image animation
@@ -34,7 +35,7 @@ export default function MobileSection(): JSX.Element {
           whileInView="visible"
           variants={imageVariants}
         >
-          <img
+          <Image
             src="/about/imageAboutMobail.png"
             alt="Image 1"
             className="absolute -top-29 scale-125 left-5 z-40 transform translate-x-3 -translate-y-2 rounded-md"
