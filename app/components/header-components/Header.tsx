@@ -53,7 +53,7 @@ const Header = () => {
             >
               <TypedComponent
                 text={typedTexts}
-                className="text-[28px] mt-40 sm:mt-0 md:text-[72px] uppercase font-cherry md:font-amlerian w-full text-center"
+                className="text-[28px] mt-40 sm:mt-0 md:text-[72px] uppercase font-algerian md:font-amlerian w-full text-center"
               />
             </motion.div>
 

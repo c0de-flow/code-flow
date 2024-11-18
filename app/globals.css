@@ -11,7 +11,6 @@ html {
   @apply md:px-40;
 }
 
-
 /* DECLARE FONTS FOR TAILWIND CLASSES USE */
 
 @font-face {
@@ -102,7 +101,7 @@ html {
 /* OUR-TEAM STYLES */
 
 .section-title {
-  @apply  text-section-title font-aladin;
+  @apply text-section-title font-aladin;
   text-shadow: 0px 0px 60px rgba(33, 103, 252, 0.72);
 }
 
@@ -146,8 +145,8 @@ html {
   border-right-width: 7px;
   border-bottom-width: 6px;
   border-left-width: 6px;
-  border-top-color: #5999BB;
-  border-right-color: #5999BB;
+  border-top-color: #5999bb;
+  border-right-color: #5999bb;
   border-bottom-color: #352451;
   border-left-color: #352451;
   border-top-right-radius: 0;
@@ -162,3 +161,14 @@ html {
   border-bottom-right-radius: 30px;
 }
 
+.header-span {
+  font-family: "Cherry bomb", cursive;
+}
+
+.section-title {
+  font-family: "Aladin", cursive;
+}
+
+.nav-link {
+  font-family: "Inter", sans-serif;
+}
