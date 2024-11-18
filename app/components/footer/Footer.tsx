@@ -12,11 +12,20 @@ import EllipseBackground from "../ellipse/EllipseBackground";
 import SocialMediaIcon from "./SocialMediaIcon";
 import { motion } from "framer-motion";
 
+// Updated social media links with URLs
 const socialMediaLinks = [
-  { Icon: FaFacebookF, label: "Facebook" },
-  { Icon: FaInstagram, label: "Instagram" },
-  { Icon: FaWhatsapp, label: "WhatsApp" },
-  { Icon: FaLinkedinIn, label: "LinkedIn" },
+  {
+    Icon: FaFacebookF,
+    label: "Facebook",
+    url: "https://www.facebook.com/profile.php?id=61568119766018",
+  },
+  {
+    Icon: FaInstagram,
+    label: "Instagram",
+    url: "https://www.instagram.com/code.flow_/",
+  },
+  { Icon: FaWhatsapp, label: "WhatsApp", url: "https://wa.me/+201070035077" },
+  { Icon: FaLinkedinIn, label: "LinkedIn", url: "https://linkedin.com" },
 ];
 
 const Footer = () => {
@@ -72,8 +81,8 @@ const Footer = () => {
             transition={{ delay: 1, duration: 1 }}
             className="flex justify-center items-center gap-x-4 md:hidden"
           >
-            {socialMediaLinks.map(({ Icon, label }) => (
-              <SocialMediaIcon key={label} Icon={Icon} />
+            {socialMediaLinks.map(({ Icon, label, url }) => (
+              <SocialMediaIcon key={label} Icon={Icon} url={url} />
             ))}
           </motion.div>
         </motion.div>
@@ -104,8 +113,8 @@ const Footer = () => {
             transition={{ delay: 1, duration: 1 }}
             className="hidden md:flex justify-center items-center gap-x-20"
           >
-            {socialMediaLinks.map(({ Icon, label }) => (
-              <SocialMediaIcon key={label} Icon={Icon} />
+            {socialMediaLinks.map(({ Icon, label, url }) => (
+              <SocialMediaIcon key={label} Icon={Icon} url={url} />
             ))}
           </motion.div>
 
