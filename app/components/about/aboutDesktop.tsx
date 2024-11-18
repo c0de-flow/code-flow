@@ -31,6 +31,8 @@ export default function DesktopSection(): JSX.Element {
           <Image
             src="/about/image 10.png"
             alt="Image 1"
+            width={500}
+            height={500}
             className="absolute md:-top-48 ml:-top-52 md:scale-125 ml:left-14 z-40 transform translate-x-4 rounded-md"
           />
         </motion.div>
