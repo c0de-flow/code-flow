@@ -1,13 +1,13 @@
 const teamMembers = [
   {
-    name: "Ahmed Ali",
-    role: "Backend Developer",
-    imgSrc: "/team/back-2.png",
+    name: "Mohamed elraafey ",
+    role: "Founder",
+    imgSrc: "/team/Muhamed.png",
   },
   {
-    name: "Mohamed Ali",
-    role: "Frontend Developer",
-    imgSrc: "/team/back-1.png",
+    name: "Abdelrhman ebrahim",
+    role: "Co_founder /CEO",
+    imgSrc: "/team/Abdelrahman.png",
   },
   {
     name: "Muhamed Saleh",
